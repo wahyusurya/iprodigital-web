@@ -1,0 +1,65 @@
+{
+  "name": "SocialProof",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string",
+      "title": "Nama Klien"
+    },
+    "company": {
+      "type": "string",
+      "title": "Nama Perusahaan"
+    },
+    "logo_url": {
+      "type": "string",
+      "title": "URL Logo Perusahaan",
+      "format": "uri"
+    },
+    "testimonial": {
+      "type": "string",
+      "title": "Testimoni / Cerita Sukses"
+    },
+    "rating": {
+      "type": "number",
+      "title": "Rating (1-5)",
+      "default": 5,
+      "minimum": 1,
+      "maximum": 5
+    },
+    "image_url": {
+      "type": "string",
+      "title": "URL Gambar Pendukung",
+      "format": "uri"
+    },
+    "video_url": {
+      "type": "string",
+      "title": "URL Video Testimoni (YouTube/Vimeo/MP4)"
+    },
+    "story_type": {
+      "type": "string",
+      "title": "Tipe",
+      "enum": [
+        "testimonial",
+        "success_story"
+      ],
+      "default": "testimonial"
+    },
+    "outcome": {
+      "type": "string",
+      "title": "Hasil / Capaian"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "title": "Unggulan",
+      "default": false
+    },
+    "sort_order": {
+      "type": "number",
+      "title": "Urutan Tampil",
+      "default": 0
+    }
+  },
+  "required": [
+    "client_name"
+  ]
+}

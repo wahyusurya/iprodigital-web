@@ -1,0 +1,65 @@
+{
+  "name": "SiteSettings",
+  "type": "object",
+  "properties": {
+    "header_tagline": {
+      "type": "string",
+      "title": "Tagline Header (opsional, tampil di samping logo)"
+    },
+    "footer_description": {
+      "type": "string",
+      "title": "Deskripsi Footer"
+    },
+    "footer_location": {
+      "type": "string",
+      "title": "Teks Lokasi"
+    },
+    "whatsapp_number": {
+      "type": "string",
+      "title": "No. WhatsApp Utama (format: 628xxx)"
+    },
+    "whatsapp_label": {
+      "type": "string",
+      "title": "Label Tampil WhatsApp Utama"
+    },
+    "whatsapp_role": {
+      "type": "string",
+      "title": "Role WhatsApp Utama (contoh: Admin - Utama)"
+    },
+    "whatsapp_number_2": {
+      "type": "string",
+      "title": "No. WhatsApp Sekunder"
+    },
+    "whatsapp_label_2": {
+      "type": "string",
+      "title": "Label Tampil WhatsApp Sekunder"
+    },
+    "whatsapp_role_2": {
+      "type": "string",
+      "title": "Role WhatsApp Sekunder"
+    },
+    "instagram_url": {
+      "type": "string",
+      "title": "URL Instagram"
+    },
+    "tiktok_url": {
+      "type": "string",
+      "title": "URL TikTok"
+    },
+    "youtube_url": {
+      "type": "string",
+      "title": "URL YouTube"
+    },
+    "gmaps_url": {
+      "type": "string",
+      "title": "URL Google Maps"
+    },
+    "facebook_url": {
+      "type": "string",
+      "title": "URL Facebook"
+    }
+  },
+  "required": [
+    "footer_description"
+  ]
+}

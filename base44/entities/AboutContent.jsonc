@@ -1,0 +1,113 @@
+{
+  "name": "AboutContent",
+  "type": "object",
+  "properties": {
+    "hero_title": {
+      "type": "string",
+      "title": "Judul Hero"
+    },
+    "hero_subtitle": {
+      "type": "string",
+      "title": "Subjudul Hero"
+    },
+    "story_heading": {
+      "type": "string",
+      "title": "Label Cerita (contoh: Cerita Kami)"
+    },
+    "story_title": {
+      "type": "string",
+      "title": "Judul Cerita Utama"
+    },
+    "story_text": {
+      "type": "string",
+      "title": "Teks Cerita (satu paragraf per baris)"
+    },
+    "stat1_value": {
+      "type": "string",
+      "title": "Statistik 1 - Nilai"
+    },
+    "stat1_label": {
+      "type": "string",
+      "title": "Statistik 1 - Label"
+    },
+    "stat2_value": {
+      "type": "string",
+      "title": "Statistik 2 - Nilai"
+    },
+    "stat2_label": {
+      "type": "string",
+      "title": "Statistik 2 - Label"
+    },
+    "stat3_value": {
+      "type": "string",
+      "title": "Statistik 3 - Nilai"
+    },
+    "stat3_label": {
+      "type": "string",
+      "title": "Statistik 3 - Label"
+    },
+    "stat4_value": {
+      "type": "string",
+      "title": "Statistik 4 - Nilai"
+    },
+    "stat4_label": {
+      "type": "string",
+      "title": "Statistik 4 - Label"
+    },
+    "vision_text": {
+      "type": "string",
+      "title": "Teks Visi"
+    },
+    "mission_text": {
+      "type": "string",
+      "title": "Teks Misi (satu poin per baris)"
+    },
+    "value1_title": {
+      "type": "string",
+      "title": "Nilai 1 - Judul"
+    },
+    "value1_desc": {
+      "type": "string",
+      "title": "Nilai 1 - Deskripsi"
+    },
+    "value2_title": {
+      "type": "string",
+      "title": "Nilai 2 - Judul"
+    },
+    "value2_desc": {
+      "type": "string",
+      "title": "Nilai 2 - Deskripsi"
+    },
+    "value3_title": {
+      "type": "string",
+      "title": "Nilai 3 - Judul"
+    },
+    "value3_desc": {
+      "type": "string",
+      "title": "Nilai 3 - Deskripsi"
+    },
+    "team_heading": {
+      "type": "string",
+      "title": "Label Tim (contoh: Tim Ahli)"
+    },
+    "team_title": {
+      "type": "string",
+      "title": "Judul Tim"
+    },
+    "team_subtitle": {
+      "type": "string",
+      "title": "Subjudul Tim"
+    },
+    "cta_title": {
+      "type": "string",
+      "title": "Judul CTA"
+    },
+    "cta_text": {
+      "type": "string",
+      "title": "Teks CTA"
+    }
+  },
+  "required": [
+    "hero_title"
+  ]
+}

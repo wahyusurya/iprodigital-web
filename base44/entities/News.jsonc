@@ -1,0 +1,56 @@
+{
+  "name": "News",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Judul"
+    },
+    "slug": {
+      "type": "string",
+      "title": "Slug URL"
+    },
+    "excerpt": {
+      "type": "string",
+      "title": "Ringkasan"
+    },
+    "content": {
+      "type": "string",
+      "title": "Konten Lengkap"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "URL Gambar",
+      "format": "uri"
+    },
+    "date": {
+      "type": "string",
+      "title": "Tanggal",
+      "format": "date"
+    },
+    "category": {
+      "type": "string",
+      "title": "Kategori",
+      "enum": [
+        "Berita",
+        "Kegiatan",
+        "Pengumuman",
+        "Event"
+      ],
+      "default": "Berita"
+    },
+    "is_published": {
+      "type": "boolean",
+      "title": "Publikasikan",
+      "default": true
+    },
+    "sort_order": {
+      "type": "number",
+      "title": "Urutan Tampil",
+      "default": 0
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

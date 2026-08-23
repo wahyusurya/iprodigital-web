@@ -1,0 +1,70 @@
+{
+  "name": "Gallery",
+  "type": "object",
+  "properties": {
+    "section": {
+      "type": "string",
+      "title": "Bagian Halaman",
+      "enum": [
+        "about",
+        "acara"
+      ]
+    },
+    "heading": {
+      "type": "string",
+      "title": "Judul Galeri"
+    },
+    "subtitle": {
+      "type": "string",
+      "title": "Subjudul Galeri"
+    },
+    "image1_url": {
+      "type": "string",
+      "title": "Foto 1",
+      "format": "uri"
+    },
+    "image1_caption": {
+      "type": "string",
+      "title": "Keterangan Foto 1"
+    },
+    "image2_url": {
+      "type": "string",
+      "title": "Foto 2",
+      "format": "uri"
+    },
+    "image2_caption": {
+      "type": "string",
+      "title": "Keterangan Foto 2"
+    },
+    "image3_url": {
+      "type": "string",
+      "title": "Foto 3",
+      "format": "uri"
+    },
+    "image3_caption": {
+      "type": "string",
+      "title": "Keterangan Foto 3"
+    },
+    "image4_url": {
+      "type": "string",
+      "title": "Foto 4",
+      "format": "uri"
+    },
+    "image4_caption": {
+      "type": "string",
+      "title": "Keterangan Foto 4"
+    },
+    "image5_url": {
+      "type": "string",
+      "title": "Foto 5",
+      "format": "uri"
+    },
+    "image5_caption": {
+      "type": "string",
+      "title": "Keterangan Foto 5"
+    }
+  },
+  "required": [
+    "section"
+  ]
+}
