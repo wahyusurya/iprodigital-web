@@ -21,6 +21,17 @@ export const config = {
   appName: process.env.APP_NAME || 'Ipro Digital',
   publicUrl: process.env.PUBLIC_URL || 'http://localhost:8093',
   uploadDir: process.env.UPLOAD_DIR || 'uploads',
+  s3: {
+    endpoint: process.env.S3_ENDPOINT,
+    bucket: process.env.S3_BUCKET,
+    privateBucket: process.env.S3_PRIVATE_BUCKET || process.env.S3_BUCKET,
+    accessKeyId: process.env.S3_ACCESS_KEY_ID,
+    secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
+    region: process.env.S3_REGION || 'us-east-1',
+    publicUrl: process.env.S3_PUBLIC_URL && process.env.S3_PUBLIC_URL.replace(/\/$/, ''),
+    forcePathStyle: true,
+    enabled: !!(process.env.S3_ENDPOINT && process.env.S3_BUCKET && process.env.S3_ACCESS_KEY_ID && process.env.S3_SECRET_ACCESS_KEY && process.env.S3_PUBLIC_URL),
+  },
   // Optional email chain: Mailgun -> Brevo -> SMTP -> log-only
   mailgun: {
     apiKey: process.env.MAILGUN_API_KEY || '',
