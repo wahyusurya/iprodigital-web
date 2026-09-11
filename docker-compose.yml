@@ -1,6 +1,8 @@
 services:
+  # ponytail: only starts with `--profile local-db`; otherwise point MONGO_URI at your own mongo
   mongo:
     image: mongo:7
+    profiles: ["local-db"]
     restart: unless-stopped
     volumes:
       - mongo-data:/data/db
@@ -10,14 +12,14 @@ services:
     restart: unless-stopped
     env_file: .env
     environment:
-      MONGO_URI: mongodb://mongo:27017/iprodigital
+      MONGO_URI: ${MONGO_URI:-mongodb://mongo:27017/iprodigital}
       PORT: "4000"
     volumes:
       - uploads:/app/uploads
     expose:
       - "4000"
-    depends_on:
-      - mongo
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   web:
     build:
