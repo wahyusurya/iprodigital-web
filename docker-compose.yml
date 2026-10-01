@@ -10,6 +10,12 @@ services:
   backend:
     build: ./backend
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 384M
+          pids: 200
     env_file: .env
     environment:
       MONGO_URI: ${MONGO_URI:-mongodb://mongo:27017/iprodigital}
@@ -26,6 +32,12 @@ services:
       context: .
       dockerfile: Dockerfile
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 64M
+          pids: 100
     ports:
       - "127.0.0.1:8093:80"
     depends_on:
